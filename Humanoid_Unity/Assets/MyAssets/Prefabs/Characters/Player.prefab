@@ -272,9 +272,9 @@ GameObject:
   - component: {fileID: 4196147994233180083}
   - component: {fileID: 5488159220977418405}
   - component: {fileID: 652771080881029069}
-  - component: {fileID: 5100869457733779992}
   - component: {fileID: 1700767894015346908}
   - component: {fileID: 5516025662714389280}
+  - component: {fileID: 3263326245233807443}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -376,7 +376,7 @@ MonoBehaviour:
     m_ActionName: Player Movement/Run[/Keyboard/shift]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5100869457733779992}
+      - m_Target: {fileID: 3263326245233807443}
         m_TargetAssemblyTypeName: PlayerRotationManager, Assembly-CSharp
         m_MethodName: OnLook
         m_Mode: 0
@@ -416,22 +416,6 @@ MonoBehaviour:
   isRunning: 0
   _lookAtTransform: {fileID: 99186866981115014}
   _playerTransform: {fileID: 2167398665529831648}
---- !u!114 &5100869457733779992
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3867120863251670063}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f503ba36faca334468817a36f6d696f8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sensibilityMultiplier: 0.2
-  _lookAtReference: {fileID: 535617311067571296}
-  _pivotReference: {fileID: 362334091827803724}
-  _playerReference: {fileID: 2297553219979486582}
 --- !u!54 &1700767894015346908
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -482,3 +466,19 @@ CapsuleCollider:
   m_Height: 2.9
   m_Direction: 1
   m_Center: {x: 0, y: 0.45, z: 0}
+--- !u!114 &3263326245233807443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3867120863251670063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f503ba36faca334468817a36f6d696f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sensibilityMultiplier: 0
+  _lookAtReference: {fileID: 2297553219979486582}
+  _pivotReference: {fileID: 362334091827803724}
+  _playerReference: {fileID: 535617311067571296}
